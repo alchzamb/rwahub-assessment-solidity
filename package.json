@@ -1,0 +1,28 @@
+{
+  "name": "smart-contracts-tech-interview",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tech interview smart contracts coding problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:stack": "set HARDHAT_SHOW_STACK_TRACES=true&& hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network test",
+    "lint": "solhint --config ./.solhint.json contracts/**/*.sol"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-truffle5": "^2.0.0",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-as-spy": "^1.2.6",
+    "hardhat": "^2.22.0",
+    "lodash": "^4.17.21",
+    "web3": "^1.5.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
