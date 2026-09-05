@@ -47,7 +47,7 @@ Please complete and submit the result within 1 ~ 2 hours unless otherwise discus
 
 ### Approach
 
-![Dividend accumulator mechanism](./public/dividend_accumulator_mechanism.png)
+![Dividend accumulator mechanism](./public/dividend_accumulator_mechanism_en.png)
 
 Dividends are distributed using an **accumulator (reward-per-share) pattern**, so `recordDividend()` never loops over holders:
 
