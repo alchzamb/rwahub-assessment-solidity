@@ -47,6 +47,8 @@ Please complete and submit the result within 1 ~ 2 hours unless otherwise discus
 
 ### Approach
 
+![Dividend accumulator mechanism](./public/dividend_accumulator_mechanism.png)
+
 Dividends are distributed using an **accumulator (reward-per-share) pattern**, so `recordDividend()` never loops over holders:
 
 - A single running value, `accDividendPerToken`, is scaled by `1e18` and incremented on every `recordDividend()` call: `accDividendPerToken += (msg.value * 1e18) / totalSupply`.
